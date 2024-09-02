@@ -18,7 +18,10 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-
+  username: duckduck9270   # Replace with your PostgreSQL username
+  password: Lp1Xs4CAfqjd   # Replace with your PostgreSQL password
+  host: ep-winter-hill-25826764.ap-southeast-1.aws.neon.tech       # Replace with the hostname or IP of your remote PostgreSQL server
+  port: 5432
 
 development:
   <<: *default
