@@ -1,4 +1,5 @@
 class Artist < ApplicationRecord
+    # enum gender: { male: 'm', female: 'f', other: 'o' }
     validates :name, presence: true, uniqueness: { case_sensative: false }
     validates :dob, presence: true
     validates :gender, presence: true
