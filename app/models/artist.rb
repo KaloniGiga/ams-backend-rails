@@ -1,5 +1,5 @@
 class Artist < ApplicationRecord
-    belongs_to :user
+    has_one :user
     validates :user_id, uniqueness: true, allow_nil: true
     # enum gender: { male: 'm', female: 'f', other: 'o' }
     validates :name, presence: true, uniqueness: { case_sensative: false }

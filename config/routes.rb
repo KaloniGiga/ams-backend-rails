@@ -7,7 +7,8 @@ Rails.application.routes.draw do
   controllers: {
     sessions: 'users/sessions',
     registrations: 'users/registrations',
-  }
+  },
+  defaults: { format: :json }
   
   # get "artists/index"
   # post "artists/create"
@@ -24,5 +25,4 @@ Rails.application.routes.draw do
 
 
   resources :artists
-  # defaults: { format: :json}
 end
