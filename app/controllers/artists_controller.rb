@@ -1,5 +1,5 @@
 class ArtistsController < ApplicationController
-  before_action :set_artist, only: %i[ destroy update ]
+  before_action :authenticate_user! :set_artist, only: %i[ destroy update ]
   def index
     @artists = Artist.all
     render json: @artists

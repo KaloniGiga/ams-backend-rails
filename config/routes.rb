@@ -9,6 +9,8 @@ Rails.application.routes.draw do
     registrations: 'users/registrations',
   },
   defaults: { format: :json }
+
+  resources :users
   
   # get "artists/index"
   # post "artists/create"
